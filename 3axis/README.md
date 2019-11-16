@@ -11,7 +11,7 @@ Add:
 ## maximal toolnumber 99999
 In the post processor is 99 the maximal tool number. The tool-table is allowed until 99999
 
-### line 657, 782
+### line 657 and 782
 change 99 to 99999
 ```
 if (tool.number > 99999) {
