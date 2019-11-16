@@ -1,4 +1,4 @@
-# Adjustments of linuxcnc.lps
+# Adjustments of linuxcnc.cps
 
 Add:
 
