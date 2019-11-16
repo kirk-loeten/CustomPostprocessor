@@ -4,8 +4,19 @@ Add:
 
 | option | description | link |
 |---------|------------|------|
+| lengthOffset | limit to 99999 | http://linuxcnc.org/docs/html/gcode/tool-compensation.html#sec:tool-table |
 | G64 P0.002 | Path Blending | http://www.linuxcnc.org/docs/2.6/html/gcode/gcode.html#sec:G64 |
 | no G43 | exclude option |  |
+
+## maximal toolnumber 99999
+In the post processor ist 99 the maximal tool number. The tool-table is possible until 99999
+
+### line 657, 782
+change 99 to 99999
+```
+if (tool.number > 99999) {
+if (lengthOffset > 99999) {
+```
 
 ## noG43 after toolchange
 
